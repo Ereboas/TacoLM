@@ -1,0 +1,10 @@
+Run `get_libriSpeech_texts.py` to obtain the concatenation of transcription txt files for LibriSpeech: `trans.txt`
+
+Run `bpe_script` to train the corresponding bpe model for the LibriSpeech dataset.
+NOTE: This step can also be performed by running `train_bpe.py`.
+
+Run `get_bpe.py` to preprocess the bpe encoding of the transcriptions of each flac file in LibriSpeech.
+
+Run `get_qnt.py` to preprocess the encodec RVQ encoding of each flac file in LibriSpeech.
+
+Run `dataset_manifest.py` to obtain `{train|valid|test}.tsv`, which saves the root-dir, filename, and codesize.
